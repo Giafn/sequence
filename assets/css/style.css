@@ -1,0 +1,18 @@
+.active{
+    color: #FF902B !important;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6EBDA !important; 
+}
+.nav-form{
+    border-radius: 20px;
+}
+.btn-black{
+    background-color: #2F2105;
+    color: white;
+    border-radius: 20px;
+}
+.btn-black:hover{
+    background-color: #FF902B;
+}
