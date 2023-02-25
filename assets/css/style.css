@@ -16,3 +16,11 @@ body{
 .btn-black:hover{
     background-color: #FF902B;
 }
+#hero > .container{
+    margin-bottom: 70px;
+}
+#bottom{
+    background-image: url('/assets/img/bg.png');
+    /* background-size: cover; */
+    background-repeat: repeat;
+}
