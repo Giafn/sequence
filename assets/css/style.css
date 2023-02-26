@@ -8,7 +8,7 @@ body{
 main {
     background-position: right top;
     background-repeat: no-repeat;
-    background-image: url("/assets/img/bg_img_hero\ \(1\).png");
+    background-image: url("assets/img/bg_img_hero\ \(1\).png");
 }
 .nav-img{
     height: 40px;
@@ -37,7 +37,7 @@ textarea:focus, input:focus{
 }
 
 #bottom{
-    background-image: url('/assets/img/bg.svg');
+    background-image: url('assets/img/bg.svg');
     /* background-size: cover; */
     background-repeat: repeat;
 }
@@ -46,7 +46,7 @@ textarea:focus, input:focus{
     main {
         background-position: right top;
         background-repeat: no-repeat;
-        background-image: url("/assets/img/bg_img_hero\ \(2\).png");
+        background-image: url("assets/img/bg_img_hero\ \(2\).png");
     }
     .nav-form{
         border-radius: 20px !important;
