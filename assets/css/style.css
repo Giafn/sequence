@@ -10,7 +10,9 @@ main {
     background-repeat: no-repeat;
     background-image: url("/assets/img/bg_img_hero\ \(1\).png");
 }
-
+.nav-img{
+    height: 40px;
+}
 .nav-form{
     border-radius: 0 20px 20px 0;
 }
