@@ -46,6 +46,13 @@ textarea:focus, input:focus{
         background-repeat: no-repeat;
         background-image: url("/assets/img/bg_img_hero\ \(2\).png");
     }
+    .nav-form{
+        border-radius: 20px !important;
+        padding-left: 1rem;
+    }
+    .icon{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) {
