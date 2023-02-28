@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
-  <body class="bg-white">
+  <body>
     <main>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg bg-sm-white">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img class="nav-img" src="assets/img/logo.png" alt="logo">
@@ -23,17 +23,17 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse bg-sm-white bg-transparent" id="navbarSupportedContent">
                 <ul class="ms-auto navbar-nav me-auto mb-2 mb-lg-0 fw-bold text-center">
                   <li class="nav-item">
-                    <a class="nav-link grow" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active grow" aria-current="page" href="/">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active grow" href="#">Menu</a>
+                    <a class="nav-link grow" href="menu.html">Menu</a>
                   </li>
                 </ul>
-                <form role="search">
-                  <div class="input-group d-flex justify-content-center border rounded-pill">
+                <form role="search" class="d-none d-md-block ">
+                  <div class="input-group d-flex justify-content-center">
                     <div class="icon">
                       <i class="bi bi-search"></i>
                     </div>
@@ -50,12 +50,12 @@
             <div class="container">
                 <div class="row justify-content-center mb-4">
                     <div class="col justify-content-center">
-                        <h3 class="text-center fw-bold">Special Menu <span class="active">for you</span></h3>
+                        <h3 class="text-center fw-bold">Our Menu <span class="active">for you</span></h3>
                     </div>
                 </div>
-                <!-- baris -->
+                <!-- baris tab -->
                 <nav>
-                    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <div class="nav nav-tabs justify-content-center bg-white rounded-top pt-2" id="nav-tab" role="tablist">
                       <button class="nav-link text-black active" id="espresso-tab" data-bs-toggle="tab" data-bs-target="#espresso" type="button" role="tab" aria-controls="nav-home text-black" aria-selected="true">Espresso Based</button>
                       <button class="nav-link text-black" id="milk-tab" data-bs-toggle="tab" data-bs-target="#milk" type="button" role="tab" aria-controls="milk" aria-selected="false">Milk Based</button>
                       <button class="nav-link text-black" id="non-coffee-tab" data-bs-toggle="tab" data-bs-target="#non-coffee" type="button" role="tab" aria-controls="non-coffee" aria-selected="false">Non Coffee</button>
@@ -66,20 +66,20 @@
                       <button class="nav-link text-black" id="main-course-tab" data-bs-toggle="tab" data-bs-target="#main-course" type="button" role="tab" aria-controls="main-course" aria-selected="false">Main Course</button>
                     </div>
                 </nav>
-                <!-- isi menu -->
-                  <div class="tab-content" id="nav-tabContent">
+                <!-- isi tab -->
+                  <div class="tab-content bg-white p-4 mb-3 rounded-bottom" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="espresso" role="tabpanel" aria-labelledby="espresso-tab" tabindex="0">
                         <div class="row">
                             <div class="col justify-content-center mb-3 mt-3">
                                 <h4 >Espresso Based</h4>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="row g-md-4 g-2">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -95,11 +95,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -115,11 +115,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -135,11 +135,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -163,12 +163,12 @@
                                 <h4 >Milk Based</h4>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="row g-md-4 g-2">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -184,11 +184,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -204,11 +204,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -224,11 +224,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -244,11 +244,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -272,12 +272,12 @@
                                 <h4 >Non Coffee</h4>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="row g-md-4 g-2">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -293,11 +293,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -313,11 +313,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -333,11 +333,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -353,11 +353,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -381,12 +381,12 @@
                                 <h4 >Signature</h4>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="row g-md-4 g-2">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -402,11 +402,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -422,11 +422,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -442,11 +442,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -462,11 +462,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -490,12 +490,12 @@
                                 <h4 >Manual Brew</h4>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="row g-md-4 g-2">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -511,11 +511,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -531,11 +531,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -551,11 +551,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -571,11 +571,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -599,12 +599,12 @@
                                 <h4 >Snack</h4>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="row g-md-4 g-2">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -620,11 +620,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -640,11 +640,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -660,11 +660,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -680,11 +680,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -708,12 +708,12 @@
                                 <h4 >Noodles</h4>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="row g-md-4 g-2">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -729,11 +729,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -749,11 +749,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -769,11 +769,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -789,11 +789,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -817,12 +817,12 @@
                                 <h4 >Main Course</h4>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-lg-3 mb-4">
+                        <div class="row g-md-4 g-2">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -838,11 +838,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -858,11 +858,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -878,11 +878,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -898,11 +898,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="col-md-4 col-lg-3 col-6">
                                 <div class="card p-3 shadow-lg border-0 grow">
                                     <img src="assets/img/product1.png" class="card-img-top img-fluid" alt="...">
                                     <div class="card-body">
-                                    <div class="row">
+                                    <div class="row mb-2 mb-md-0">
                                         <div class="col-8">
                                         <p class="fw-bold">Hazelnut Latte</p>
                                         </div>
@@ -921,7 +921,7 @@
                         </div>
                     </div>
                   </div>
-                <!-- /isi menu -->
+                <!-- /isi tab -->
             </div>
         </section>
         <!-- spesial menu -->

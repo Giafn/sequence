@@ -8,7 +8,7 @@ body{
 main {
     background-position: right top;
     background-repeat: no-repeat;
-    background-image: url("assets/img/bg_img_hero\ \(1\).png");
+    background-image: url("../img/bg_img_hero\ \(1\).png");
 }
 .nav-img{
     height: 40px;
@@ -37,7 +37,7 @@ textarea:focus, input:focus{
 }
 
 #bottom{
-    background-image: url('assets/img/bg.svg');
+    background-image: url('../img/bg.svg');
     /* background-size: cover; */
     background-repeat: repeat;
 }
@@ -46,7 +46,10 @@ textarea:focus, input:focus{
     main {
         background-position: right top;
         background-repeat: no-repeat;
-        background-image: url("assets/img/bg_img_hero\ \(2\).png");
+        background-image: url("../img/bg_img_hero\ \(2\).png");
+    }
+    h4{
+        font-size: medium;
     }
     .nav-form{
         border-radius: 20px !important;
@@ -54,6 +57,19 @@ textarea:focus, input:focus{
     }
     .icon{
         display: none;
+    }
+    .bg-sm-white{
+        background-color: white !important;
+    }
+    .bg-sm-cream{
+        background-color: #F6EBDA;
+    }
+    .card-body p{
+        font-size: small;
+        margin: 0;
+    }
+    .card-body{
+        padding: 0.5rem;
     }
 }
 
