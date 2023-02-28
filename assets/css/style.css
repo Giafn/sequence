@@ -77,3 +77,9 @@ textarea:focus, input:focus{
     .grow { transition: all .2s ease-in-out; }
     .grow:hover { transform: scale(1.1); }
 }
+@media only screen and (max-width: 413px){
+    .col-xs-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
